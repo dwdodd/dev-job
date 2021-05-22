@@ -1,0 +1,1 @@
+export const Loader = param => document.getElementById('myloader-receta').style.display = param;

@@ -1,0 +1,58 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#btn-mas{
+    display: none;
+}
+.icon-container{
+    position: fixed;
+    bottom: 90px;
+    right: 32px;
+    z-index: 1000;
+}
+.social-em a, .social-wa a, .btn-mas label{
+    display: block;
+    text-decoration: none;
+    background: #02DEC7;
+    color: #fff;
+    width: 55px;
+    height: 55px;
+    line-height: 55px;
+    text-align: center;
+    border-radius: 50%;
+    box-shadow: 0px 1px 10px rgba(0,0,0,0.4);
+    transition: all 500ms ease;
+}
+
+.social-em a:hover, .social-wa a:hover{
+    background: #fff;
+    color: #02DEC7;
+}
+
+.redes a{
+    margin-bottom: 5px;
+    opacity: 0;
+    visibility: hidden;
+    display:none;
+}
+
+#btn-mas:checked~ .redes a {
+    margin-bottom: 10px;
+    opacity: 1;
+    visibility: visible;
+    display:block;
+}
+.btn-mas label{
+    cursor: pointer;
+    background: #02DEC7;
+    font-size: 23px;
+}
+#btn-mas:checked~ .btn-mas label{
+    transform: rotate(135deg);
+    font-size: 25px;
+}
+.size-icon{
+    font-size:36px;
+}
