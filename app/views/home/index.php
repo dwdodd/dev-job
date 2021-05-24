@@ -15,10 +15,10 @@ function request_uri($require_template, $require_data, $element_path, $method){
 
     $content = str_replace(
         [
-            '{{ cnt }}',
+            '{{ data }}',
         ],
         [
-            27
+            RepositoryHome::users()
         ],
         file_get_contents($element_path)
     );

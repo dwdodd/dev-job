@@ -13,11 +13,11 @@ final class RepositoryHome
     {
         require_once('context/contextHome.php');
 
-        @$result = QueryManager::openquery("select * users", new Conn);
+        @$result = QueryManager::openquery("select UserName, Email from users", new Conn);
 
         $content = null;
         foreach($result as $val){
-            $content .= contextHome($val->nombre, $val->apellido, $val->especialidad);
+            $content .= contextHome($val->UserName, $val->Email);
         }
         return $content;
     }
