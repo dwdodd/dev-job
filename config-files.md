@@ -3,7 +3,8 @@
 
 - app/assets/js/modules/base_url.js
 - config/system/BaseUrl.php
-- connections/env/envConn.php
+- connections/env/envConn.php - Hay que crear esta carpeta y el archivo envConn.php
+    aquí van las credenciales de la base de datos.
 - resources/HeaderLocation.php
 
 - LA CONFIGURACION PARA ESTOS ARCHIVOS ES CAMBIARLES
