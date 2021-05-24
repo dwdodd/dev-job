@@ -13,25 +13,22 @@
     <link rel="stylesheet" href="{{ host }}app/assets/css/share-button.css"/>
 </head>
 <body>
-    
-        <div id="myloader-receta" style="display:none;">
-            <div id="myloader2-receta" class="text-center">
-                <div class="loader-receta"></div>
-                <div id="myloadermsg-receta">Por favor espere...</div>
-            </div>
+    <div id="myloader-receta" style="display:none;">
+        <div id="myloader2-receta" class="text-center">
+            <div class="loader-receta"></div>
+            <div id="myloadermsg-receta">Por favor espere...</div>
         </div>
-        <div class="icon-container">
-            <input type="checkbox" id="btn-mas">
-            <div class="social-em redes">
-                <a href="#" class="fa fa-share-alt size-icon" style="font-size:26px;"></a>
-            </div>
-            <div class="social-wa redes">
-                <a href="#" class="fa fa-whatsapp size-icon"></a>
-            </div>
-            <div class="btn-mas">
-                <label for="btn-mas" class="fa fa-plus"></label>
-            </div>
+    </div>
+    <div class="icon-container">
+        <input type="checkbox" id="btn-mas">
+        <div class="social-em redes">
+            <a href="#" class="fa fa-share-alt size-icon" style="font-size:26px;"></a>
         </div>
-   
-
+        <div class="social-wa redes">
+            <a href="#" class="fa fa-whatsapp size-icon"></a>
+        </div>
+        <div class="btn-mas">
+            <label for="btn-mas" class="fa fa-plus"></label>
+        </div>
+    </div>
     <div class="main">
