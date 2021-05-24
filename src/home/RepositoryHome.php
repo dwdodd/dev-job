@@ -9,7 +9,7 @@ else{
 
 final class RepositoryHome
 {
-    public static function doctors()
+    public static function users()
     {
         require_once('context/contextHome.php');
 

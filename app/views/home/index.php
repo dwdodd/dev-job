@@ -6,7 +6,7 @@ $info = explode('/', rtrim($_SERVER['REQUEST_URI'],'/'));
 array_shift($info);
 
 if(count($info) > 2 ){
-    header('location: /aviso/'.$info[1]);
+    header('location: /dev-job/aviso/'.$info[2]);
 }
 
 function request_uri($require_template, $require_data, $element_path, $method){
