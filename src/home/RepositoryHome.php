@@ -1,6 +1,6 @@
 <?php
 
-if( $_SERVER['REQUEST_URI'] === '/' ){
+if( $_SERVER['REQUEST_URI'] === '/' || $_SERVER['REQUEST_URI'] === '/dev-job/'  ){
     require_once 'connections/Conn.php';
 }
 else{

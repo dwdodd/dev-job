@@ -5,12 +5,12 @@ define('PATH_TO', '../../../');
 $info = explode('/', rtrim($_SERVER['REQUEST_URI'],'/'));
 array_shift($info);
 
-if(count($info) > 1 ){
+if(count($info) > 2 ){
     header('location: /aviso/'.$info[1]);
 }
 
-function request_uri($require, $require_data, $element_path, $method){
-    $require;
+function request_uri($require_template, $require_data, $element_path, $method){
+    $require_template;
     $require_data;
 
     $content = str_replace(
@@ -29,7 +29,7 @@ function request_uri($require, $require_data, $element_path, $method){
     Template::$method($description, $keyword, $title, $content);
 }
 
-if( empty($info) ){
+if( empty($info) || $_SERVER['REQUEST_URI'] === '/dev-job/' ){
     request_uri(
         require_once 'config/layout/Template.php',
         require_once 'src/home/RepositoryHome.php',
